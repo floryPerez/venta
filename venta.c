@@ -24,7 +24,7 @@ void mes_minimo (float);
 void venta_anual(float);
 
 
-  
+// ya veo tu programa y lo modifico sin problema  
 
 int main()
 {
