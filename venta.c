@@ -111,8 +111,10 @@ void leer_ventas(  vendedor ven  [NOVENDEDOR])
 void leervendedor(vendedor *ven)
 {
 	int j;
+	setbuf(stdin,NULL);
 	printf("Nombre: ");
 	scanf("%[^\n]",ven->nombre);
+	setbuf(stdin,NULL);
 	printf("ingrese mes: ");
 	scanf("%[^\n]",ven->mes);
 
