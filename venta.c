@@ -49,7 +49,7 @@ vendedor ven [NOVENDEDOR] ;
         switch(opc)
         {
             case 1:
-                leer_Datos(ven);
+                leer_ventas(ven);
                 break;
             case 2:
               reportes (ven)  ;
@@ -190,11 +190,12 @@ void reportemes(vendedor ven[NOVENDEDOR])
 		}
 	}
 	if(encontrado==0)
-	puts("No se encontró el mes");
+	puts("No se encontro el mes");
 }
 
 
-
+void reporteindividual(vendedor ven[NOVENDEDOR] )
+{}
 
 
 void venta_anual(vendedor  ven[NOVENDEDOR])
@@ -204,19 +205,3 @@ void venta_anual(vendedor  ven[NOVENDEDOR])
 
 void calculatotaldeventa()
 {}
-
-
-/*
-void reporteindividual(vendedor ven [NOVENDEDOR])
-{
-
-int i;
-	float totalindividual;
-
-	for(i=0;i<NOVENDEDOR;i++)
-	{
-		totalindividual=(ven[i]);
-
-	}
-}*/
-
